@@ -10,7 +10,7 @@ export default async function PastePage({
 
   const paste = await kv.get<any>(`paste:${id}`);
   if (!paste) notFound();
-
+ 
   return (
     <main className="min-h-screen flex items-center justify-center px-4 py-16">
       <div className="w-full max-w-2xl bg-slate-900 border border-slate-800 rounded-2xl shadow-xl p-6">
